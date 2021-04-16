@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="472.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddPrescriptionView">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#71b8fa" height="86.0" layoutX="552.0" layoutY="339.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94f2e3" height="71.0" layoutX="551.0" layoutY="258.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4edc5" height="180.0" layoutX="551.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="315.0" />
+      <TableView fx:id="allDrugsTable" layoutX="14.0" layoutY="36.0" prefHeight="188.0" prefWidth="533.0">
+        <columns>
+          <TableColumn fx:id="drugNameColumn" prefWidth="368.9999876022339" text="Drug Name" />
+          <TableColumn fx:id="availableQuantityColumn" prefWidth="160.5999755859375" text="Available Quantity" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="184.0" text="Search Drug" />
+      <TextField layoutX="88.0" layoutY="11.0" prefHeight="26.0" prefWidth="459.0" promptText="enter name of drug" />
+      <TableView fx:id="allDrugsTable1" layoutX="14.0" layoutY="258.0" prefHeight="167.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="prescribedDrugNameColumn" prefWidth="133.59997844696045" text="Drug Name" />
+            <TableColumn fx:id="prescribedQuantityColumn" prefWidth="70.60000610351562" text="Quantity" />
+            <TableColumn fx:id="dosageDescriptionColumn" prefWidth="325.1999969482422" text="Dosage Description" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="236.0" text="Prescribed Drugs" />
+      <Label layoutX="559.0" layoutY="99.0" text="Quantity" />
+      <TextField fx:id="quantityTextField" layoutX="612.0" layoutY="95.0" prefHeight="26.0" prefWidth="246.0" promptText="add quantity here" />
+      <Label fx:id="nameOfDrugToBePrescribedLbl" layoutX="555.0" layoutY="61.0" text="Currently Prescribing ...." />
+      <TextArea layoutX="612.0" layoutY="130.0" prefHeight="56.0" prefWidth="246.0" promptText="add information about dosage here" />
+      <Label layoutX="562.0" layoutY="149.0" text="Dosage" />
+      <Button layoutX="555.0" layoutY="197.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="303.0" text="Add Drug To Prescription" />
+      <Label layoutX="561.0" layoutY="271.0" text="Patient Details" />
+      <ComboBox fx:id="patientComboBox" layoutX="559.0" layoutY="296.0" prefHeight="26.0" prefWidth="303.0" promptText="choose patient" />
+      <Button fx:id="deleteDrugBtn" layoutX="14.0" layoutY="433.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="257.0" text="Remove Drug From Prescription" />
+      <Button fx:id="sendBtn" layoutX="555.0" layoutY="433.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="303.0" text="Send Prescription" />
+      <Button fx:id="cancelBtn" layoutX="801.0" layoutY="11.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="updateDrugBtn" layoutX="288.0" layoutY="433.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="258.0" text="Update Drug Details" />
+      <Label layoutX="555.0" layoutY="342.0" text="Prescription Details" />
+      <TextArea layoutX="562.0" layoutY="360.0" prefHeight="56.0" prefWidth="297.0" promptText="enter prescription details here" />
+   </children>
+</AnchorPane>

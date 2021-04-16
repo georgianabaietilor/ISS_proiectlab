@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="472.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainViewDoctor">
+   <children>
+      <TableView fx:id="prescriptionsTableView" layoutX="17.0" layoutY="96.0" prefHeight="350.0" prefWidth="430.0">
+        <columns>
+          <TableColumn fx:id="dateTimeColumn" prefWidth="137.3999900817871" text="Prescribed on" />
+          <TableColumn prefWidth="177.59999084472656" text="Patient" />
+            <TableColumn fx:id="statusColumn" prefWidth="110.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+      <Label fx:id="currentlyLoggedInLbl" layoutX="21.0" layoutY="14.0" text="Currently logged in: " />
+      <Label layoutX="17.0" layoutY="79.0" prefHeight="18.0" prefWidth="430.0" text="Prescriptions" />
+      <Button fx:id="addNewPrescriptionBtn" layoutX="17.0" layoutY="37.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="430.0" text="Add New Prescription" />
+      <TextArea layoutX="460.0" layoutY="37.0" prefHeight="89.0" prefWidth="398.0" />
+      <Label layoutX="460.0" layoutY="14.0" prefHeight="18.0" prefWidth="145.0" text="Prescription Details" />
+      <Label layoutX="460.0" layoutY="145.0" text="Prescribed Drugs" />
+      <TableView fx:id="prescribedDrugsTable" layoutX="460.0" layoutY="171.0" prefHeight="230.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="drugNameColumn" prefWidth="183.0" text="Drug Name" />
+          <TableColumn fx:id="quantityColumn" prefWidth="61.20001220703125" text="Quantity" />
+            <TableColumn fx:id="dosageColumn" prefWidth="148.199951171875" text="Dosage Details" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteBtn" layoutX="460.0" layoutY="412.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" text="Delete Prescription" />
+      <Button fx:id="updateBtn" layoutX="592.0" layoutY="412.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="133.0" text="Update Prescription" />
+      <Button fx:id="deliverBtn" layoutX="738.0" layoutY="412.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" text="Deliver Prescription" />
+   </children>
+</AnchorPane>
